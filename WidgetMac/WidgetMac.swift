@@ -36,7 +36,7 @@ struct Provider: IntentTimelineProvider {
         for hourOffset in 0 ..< 5 {
             c.count += 1
             let entryDate = Calendar.current.date(byAdding: .second, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate,txt: "s \(c.count)", configuration: configuration)
+            let entry = SimpleEntry(date: entryDate,txt: "\(c.count)", configuration: configuration)
             entries.append(entry)
         }
 
@@ -57,6 +57,19 @@ struct WidgetMacEntryView : View {
     var body: some View {
         Text(entry.date, style: .time)
         Text(entry.txt)
+            .padding()
+            .background(Color.green)
+            .foregroundColor(Color.yellow)
+            .cornerRadius(5)
+            .shadow(radius: 15)
+            .shadow(radius: 25)
+            .font(Font.custom("Avenir-Black", size: 27))
+        Text(entry.date, style: .timer)
+            .padding()
+            .background(Color.blue)
+            .foregroundColor(Color.yellow)
+            .cornerRadius(5)
+            .shadow(radius: 15)
     }
 }
 
