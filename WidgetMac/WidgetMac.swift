@@ -18,19 +18,19 @@ var c = Counter(txt: "b",count: 0)
 
 struct Provider: IntentTimelineProvider {
     
-   
+    
     func placeholder(in context: Context) -> SimpleEntry {
         SimpleEntry(date: Date(),txt:"s", configuration: ConfigurationIntent())
     }
-
+    
     func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (SimpleEntry) -> ()) {
         let entry = SimpleEntry(date: Date(),txt: "s", configuration: configuration)
         completion(entry)
     }
-
+    
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
         var entries: [SimpleEntry] = []
-
+        
         // Generate a timeline consisting of five entries an hour apart, starting from the current date.
         let currentDate = Date()
         for hourOffset in 0 ..< 5 {
@@ -39,7 +39,7 @@ struct Provider: IntentTimelineProvider {
             let entry = SimpleEntry(date: entryDate,txt: "\(c.count)", configuration: configuration)
             entries.append(entry)
         }
-
+        
         let timeline = Timeline(entries: entries, policy: .atEnd)
         completion(timeline)
     }
@@ -53,30 +53,41 @@ struct SimpleEntry: TimelineEntry {
 
 struct WidgetMacEntryView : View {
     var entry: Provider.Entry
-
+    
     var body: some View {
-        Text(entry.date, style: .time)
-        Text(entry.txt)
-            .padding()
-            .background(Color.green)
-            .foregroundColor(Color.yellow)
-            .cornerRadius(5)
-            .shadow(radius: 15)
-            .shadow(radius: 25)
-            .font(Font.custom("Avenir-Black", size: 27))
-        Text(entry.date, style: .timer)
-            .padding()
-            .background(Color.blue)
-            .foregroundColor(Color.yellow)
-            .cornerRadius(5)
-            .shadow(radius: 15)
+        ZStack{
+            Color("DeepBlue")
+            HStack{
+                VStack{
+                    Text(entry.date, style: .time)
+                        .foregroundColor(.white)
+                    Text(entry.txt)
+                        .padding()
+                        .background(Color("LighterBlue"))
+                        .foregroundColor(Color.yellow)
+                        .cornerRadius(5)
+                        .shadow(radius: 15)
+                        .shadow(radius: 25)
+                        .font(Font.custom("Avenir-Black", size: 27))
+                    Text(entry.date, style: .timer)
+                        .padding([.leading])
+                        .background(Color.blue)
+                        .foregroundColor(Color.yellow)
+                        .cornerRadius(5)
+                        .shadow(radius: 15)
+                }
+                Spacer(minLength: 2)
+            }
+           
+            
+        }
     }
 }
 
 @main
 struct WidgetMac: Widget {
     let kind: String = "WidgetMac"
-
+    
     var body: some WidgetConfiguration {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
             WidgetMacEntryView(entry: entry)
