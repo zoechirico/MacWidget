@@ -9,13 +9,22 @@ import WidgetKit
 import SwiftUI
 import Intents
 
+
+struct Counter {
+    let txt: String
+    var count: Int64
+}
+var c = Counter(txt: "b",count: 0)
+
 struct Provider: IntentTimelineProvider {
+    
+   
     func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date(), configuration: ConfigurationIntent())
+        SimpleEntry(date: Date(),txt:"s", configuration: ConfigurationIntent())
     }
 
     func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let entry = SimpleEntry(date: Date(), configuration: configuration)
+        let entry = SimpleEntry(date: Date(),txt: "s", configuration: configuration)
         completion(entry)
     }
 
@@ -25,8 +34,9 @@ struct Provider: IntentTimelineProvider {
         // Generate a timeline consisting of five entries an hour apart, starting from the current date.
         let currentDate = Date()
         for hourOffset in 0 ..< 5 {
-            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate, configuration: configuration)
+            c.count += 1
+            let entryDate = Calendar.current.date(byAdding: .second, value: hourOffset, to: currentDate)!
+            let entry = SimpleEntry(date: entryDate,txt: "s \(c.count)", configuration: configuration)
             entries.append(entry)
         }
 
@@ -37,6 +47,7 @@ struct Provider: IntentTimelineProvider {
 
 struct SimpleEntry: TimelineEntry {
     let date: Date
+    let txt: String
     let configuration: ConfigurationIntent
 }
 
@@ -45,6 +56,7 @@ struct WidgetMacEntryView : View {
 
     var body: some View {
         Text(entry.date, style: .time)
+        Text(entry.txt)
     }
 }
 
@@ -63,7 +75,7 @@ struct WidgetMac: Widget {
 
 struct WidgetMac_Previews: PreviewProvider {
     static var previews: some View {
-        WidgetMacEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()))
+        WidgetMacEntryView(entry: SimpleEntry(date: Date(),txt: "s", configuration: ConfigurationIntent()))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }
