@@ -37,6 +37,8 @@ struct ContentView: View {
                 .font(Font.custom("Avenir-Black", size: 17))
             Spacer()
         }
+        .frame(minWidth: 700, minHeight: 300)
+
         
         
         

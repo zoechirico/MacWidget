@@ -21,6 +21,12 @@
 		B0B93964258A76C300DD83E0 /* WidgetMac.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = B0B9395F258A76C200DD83E0 /* WidgetMac.intentdefinition */; };
 		B0B93965258A76C300DD83E0 /* WidgetMac.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = B0B9395F258A76C200DD83E0 /* WidgetMac.intentdefinition */; };
 		B0B93968258A76C300DD83E0 /* WidgetMacExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B0B93956258A76C200DD83E0 /* WidgetMacExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B0C692CD258AF0990013081E /* JustAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C692CC258AF0990013081E /* JustAppApp.swift */; };
+		B0C692CF258AF0990013081E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C692CE258AF0990013081E /* ContentView.swift */; };
+		B0C692D1258AF09B0013081E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0C692D0258AF09B0013081E /* Assets.xcassets */; };
+		B0C692D4258AF09B0013081E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0C692D3258AF09B0013081E /* Preview Assets.xcassets */; };
+		B0C692E0258AF09C0013081E /* JustAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C692DF258AF09C0013081E /* JustAppTests.swift */; };
+		B0C692EB258AF09C0013081E /* JustAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C692EA258AF09C0013081E /* JustAppUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = B0B93955258A76C200DD83E0;
 			remoteInfo = WidgetMacExtension;
+		};
+		B0C692DC258AF09C0013081E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0B93916258A76A800DD83E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0C692C9258AF0990013081E;
+			remoteInfo = JustApp;
+		};
+		B0C692E7258AF09C0013081E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0B93916258A76A800DD83E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0C692C9258AF0990013081E;
+			remoteInfo = JustApp;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -84,6 +104,19 @@
 		B0B93960258A76C300DD83E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0B93962258A76C300DD83E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0B93963258A76C300DD83E0 /* WidgetMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WidgetMac.entitlements; sourceTree = "<group>"; };
+		B0C692CA258AF0990013081E /* JustApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0C692CC258AF0990013081E /* JustAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustAppApp.swift; sourceTree = "<group>"; };
+		B0C692CE258AF0990013081E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B0C692D0258AF09B0013081E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B0C692D3258AF09B0013081E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B0C692D5258AF09B0013081E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0C692D6258AF09B0013081E /* JustApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JustApp.entitlements; sourceTree = "<group>"; };
+		B0C692DB258AF09C0013081E /* JustAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JustAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0C692DF258AF09C0013081E /* JustAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustAppTests.swift; sourceTree = "<group>"; };
+		B0C692E1258AF09C0013081E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0C692E6258AF09C0013081E /* JustAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JustAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0C692EA258AF09C0013081E /* JustAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustAppUITests.swift; sourceTree = "<group>"; };
+		B0C692EC258AF09C0013081E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +150,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B0C692C7258AF0990013081E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0C692D8258AF09C0013081E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0C692E3258AF09C0013081E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -127,6 +181,9 @@
 				B0B93935258A76AA00DD83E0 /* MacWidgetTests */,
 				B0B93940258A76AA00DD83E0 /* MacWidgetUITests */,
 				B0B9395C258A76C200DD83E0 /* WidgetMac */,
+				B0C692CB258AF0990013081E /* JustApp */,
+				B0C692DE258AF09C0013081E /* JustAppTests */,
+				B0C692E9258AF09C0013081E /* JustAppUITests */,
 				B0B93957258A76C200DD83E0 /* Frameworks */,
 				B0B9391F258A76A800DD83E0 /* Products */,
 			);
@@ -139,6 +196,9 @@
 				B0B93932258A76AA00DD83E0 /* MacWidgetTests.xctest */,
 				B0B9393D258A76AA00DD83E0 /* MacWidgetUITests.xctest */,
 				B0B93956258A76C200DD83E0 /* WidgetMacExtension.appex */,
+				B0C692CA258AF0990013081E /* JustApp.app */,
+				B0C692DB258AF09C0013081E /* JustAppTests.xctest */,
+				B0C692E6258AF09C0013081E /* JustAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -202,6 +262,45 @@
 				B0B93963258A76C300DD83E0 /* WidgetMac.entitlements */,
 			);
 			path = WidgetMac;
+			sourceTree = "<group>";
+		};
+		B0C692CB258AF0990013081E /* JustApp */ = {
+			isa = PBXGroup;
+			children = (
+				B0C692CC258AF0990013081E /* JustAppApp.swift */,
+				B0C692CE258AF0990013081E /* ContentView.swift */,
+				B0C692D0258AF09B0013081E /* Assets.xcassets */,
+				B0C692D5258AF09B0013081E /* Info.plist */,
+				B0C692D6258AF09B0013081E /* JustApp.entitlements */,
+				B0C692D2258AF09B0013081E /* Preview Content */,
+			);
+			path = JustApp;
+			sourceTree = "<group>";
+		};
+		B0C692D2258AF09B0013081E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B0C692D3258AF09B0013081E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B0C692DE258AF09C0013081E /* JustAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				B0C692DF258AF09C0013081E /* JustAppTests.swift */,
+				B0C692E1258AF09C0013081E /* Info.plist */,
+			);
+			path = JustAppTests;
+			sourceTree = "<group>";
+		};
+		B0C692E9258AF09C0013081E /* JustAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B0C692EA258AF09C0013081E /* JustAppUITests.swift */,
+				B0C692EC258AF09C0013081E /* Info.plist */,
+			);
+			path = JustAppUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +378,59 @@
 			productReference = B0B93956258A76C200DD83E0 /* WidgetMacExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		B0C692C9258AF0990013081E /* JustApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0C692F3258AF09C0013081E /* Build configuration list for PBXNativeTarget "JustApp" */;
+			buildPhases = (
+				B0C692C6258AF0990013081E /* Sources */,
+				B0C692C7258AF0990013081E /* Frameworks */,
+				B0C692C8258AF0990013081E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JustApp;
+			productName = JustApp;
+			productReference = B0C692CA258AF0990013081E /* JustApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B0C692DA258AF09C0013081E /* JustAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0C692F4258AF09C0013081E /* Build configuration list for PBXNativeTarget "JustAppTests" */;
+			buildPhases = (
+				B0C692D7258AF09C0013081E /* Sources */,
+				B0C692D8258AF09C0013081E /* Frameworks */,
+				B0C692D9258AF09C0013081E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0C692DD258AF09C0013081E /* PBXTargetDependency */,
+			);
+			name = JustAppTests;
+			productName = JustAppTests;
+			productReference = B0C692DB258AF09C0013081E /* JustAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B0C692E5258AF09C0013081E /* JustAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0C692F5258AF09C0013081E /* Build configuration list for PBXNativeTarget "JustAppUITests" */;
+			buildPhases = (
+				B0C692E2258AF09C0013081E /* Sources */,
+				B0C692E3258AF09C0013081E /* Frameworks */,
+				B0C692E4258AF09C0013081E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0C692E8258AF09C0013081E /* PBXTargetDependency */,
+			);
+			name = JustAppUITests;
+			productName = JustAppUITests;
+			productReference = B0C692E6258AF09C0013081E /* JustAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -302,6 +454,17 @@
 					B0B93955258A76C200DD83E0 = {
 						CreatedOnToolsVersion = 12.3;
 					};
+					B0C692C9258AF0990013081E = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					B0C692DA258AF09C0013081E = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = B0C692C9258AF0990013081E;
+					};
+					B0C692E5258AF09C0013081E = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = B0C692C9258AF0990013081E;
+					};
 				};
 			};
 			buildConfigurationList = B0B93919258A76A800DD83E0 /* Build configuration list for PBXProject "MacWidget" */;
@@ -321,6 +484,9 @@
 				B0B93931258A76AA00DD83E0 /* MacWidgetTests */,
 				B0B9393C258A76AA00DD83E0 /* MacWidgetUITests */,
 				B0B93955258A76C200DD83E0 /* WidgetMacExtension */,
+				B0C692C9258AF0990013081E /* JustApp */,
+				B0C692DA258AF09C0013081E /* JustAppTests */,
+				B0C692E5258AF09C0013081E /* JustAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -354,6 +520,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0B93961258A76C300DD83E0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0C692C8258AF0990013081E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0C692D4258AF09B0013081E /* Preview Assets.xcassets in Resources */,
+				B0C692D1258AF09B0013081E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0C692D9258AF09C0013081E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0C692E4258AF09C0013081E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +585,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B0C692C6258AF0990013081E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0C692CF258AF0990013081E /* ContentView.swift in Sources */,
+				B0C692CD258AF0990013081E /* JustAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0C692D7258AF09C0013081E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0C692E0258AF09C0013081E /* JustAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0C692E2258AF09C0013081E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0C692EB258AF09C0013081E /* JustAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -413,6 +627,16 @@
 			isa = PBXTargetDependency;
 			target = B0B93955258A76C200DD83E0 /* WidgetMacExtension */;
 			targetProxy = B0B93966258A76C300DD83E0 /* PBXContainerItemProxy */;
+		};
+		B0C692DD258AF09C0013081E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0C692C9258AF0990013081E /* JustApp */;
+			targetProxy = B0C692DC258AF09C0013081E /* PBXContainerItemProxy */;
+		};
+		B0C692E8258AF09C0013081E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0C692C9258AF0990013081E /* JustApp */;
+			targetProxy = B0C692E7258AF09C0013081E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -712,6 +936,138 @@
 			};
 			name = Release;
 		};
+		B0C692ED258AF09C0013081E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = JustApp/JustApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"JustApp/Preview Content\"";
+				DEVELOPMENT_TEAM = UWJCYGVG9Z;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = JustApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cwxstat.JustApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B0C692EE258AF09C0013081E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = JustApp/JustApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"JustApp/Preview Content\"";
+				DEVELOPMENT_TEAM = UWJCYGVG9Z;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = JustApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cwxstat.JustApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B0C692EF258AF09C0013081E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = UWJCYGVG9Z;
+				INFOPLIST_FILE = JustAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cwxstat.JustAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JustApp.app/Contents/MacOS/JustApp";
+			};
+			name = Debug;
+		};
+		B0C692F0258AF09C0013081E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = UWJCYGVG9Z;
+				INFOPLIST_FILE = JustAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cwxstat.JustAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JustApp.app/Contents/MacOS/JustApp";
+			};
+			name = Release;
+		};
+		B0C692F1258AF09C0013081E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = UWJCYGVG9Z;
+				INFOPLIST_FILE = JustAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cwxstat.JustAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = JustApp;
+			};
+			name = Debug;
+		};
+		B0C692F2258AF09C0013081E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = UWJCYGVG9Z;
+				INFOPLIST_FILE = JustAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cwxstat.JustAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = JustApp;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -756,6 +1112,33 @@
 			buildConfigurations = (
 				B0B9396A258A76C300DD83E0 /* Debug */,
 				B0B9396B258A76C300DD83E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0C692F3258AF09C0013081E /* Build configuration list for PBXNativeTarget "JustApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0C692ED258AF09C0013081E /* Debug */,
+				B0C692EE258AF09C0013081E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0C692F4258AF09C0013081E /* Build configuration list for PBXNativeTarget "JustAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0C692EF258AF09C0013081E /* Debug */,
+				B0C692F0258AF09C0013081E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0C692F5258AF09C0013081E /* Build configuration list for PBXNativeTarget "JustAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0C692F1258AF09C0013081E /* Debug */,
+				B0C692F2258AF09C0013081E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
