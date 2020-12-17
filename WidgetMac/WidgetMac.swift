@@ -33,9 +33,9 @@ struct Provider: IntentTimelineProvider {
         
         // Generate a timeline consisting of five entries an hour apart, starting from the current date.
         let currentDate = Date()
-        for hourOffset in 0 ..< 5 {
+        for xOffSet in 0 ..< 5 {
             c.count += 1
-            let entryDate = Calendar.current.date(byAdding: .second, value: hourOffset, to: currentDate)!
+            let entryDate = Calendar.current.date(byAdding: .second, value: xOffSet, to: currentDate)!
             let entry = SimpleEntry(date: entryDate,txt: "\(c.count)", configuration: configuration)
             entries.append(entry)
         }
@@ -54,6 +54,25 @@ struct SimpleEntry: TimelineEntry {
 struct WidgetMacEntryView : View {
     var entry: Provider.Entry
     
+    fileprivate func extractedFunc() -> some View {
+        return HStack {
+            Spacer()
+            HStack{
+                Spacer()
+                Text(entry.date, style: .timer)
+                    .padding([.leading])
+                    .font(.title)
+                    .foregroundColor(Color.yellow)
+            }
+            .padding(.all,8.0)
+            .background(ContainerRelativeShape().fill(Color.blue))
+            
+            Spacer()
+        }
+        .padding(.all,8.0)
+        .background(ContainerRelativeShape().fill(Color("LighterBlue")))
+    }
+    
     var body: some View {
         ZStack{
             Color("DeepBlue")
@@ -67,22 +86,7 @@ struct WidgetMacEntryView : View {
                         .font(Font.custom("Avenir-Black", size: 27))
                         .background(ContainerRelativeShape().fill(Color("LighterBlue")))
                     
-                    HStack {
-                        Spacer()
-                        HStack{
-                        Spacer()
-                        Text(entry.date, style: .timer)
-                            .padding([.leading])
-                            .font(.title)
-                            .foregroundColor(Color.yellow)
-                        }
-                        .padding(.all,8.0)
-                        .background(ContainerRelativeShape().fill(Color.blue))
-                        
-                        Spacer()
-                    }
-                    .padding(.all,8.0)
-                    .background(ContainerRelativeShape().fill(Color("LighterBlue")))
+                    extractedFunc()
                 }
                 Spacer(minLength: 2)
             }
