@@ -63,22 +63,30 @@ struct WidgetMacEntryView : View {
                         .foregroundColor(.white)
                     Text(entry.txt)
                         .padding()
-                        .background(Color("LighterBlue"))
                         .foregroundColor(Color.yellow)
-                        .cornerRadius(5)
-                        .shadow(radius: 15)
-                        .shadow(radius: 25)
                         .font(Font.custom("Avenir-Black", size: 27))
-                    Text(entry.date, style: .timer)
-                        .padding([.leading])
-                        .background(Color.blue)
-                        .foregroundColor(Color.yellow)
-                        .cornerRadius(5)
-                        .shadow(radius: 15)
+                        .background(ContainerRelativeShape().fill(Color("LighterBlue")))
+                    
+                    HStack {
+                        Spacer()
+                        HStack{
+                        Spacer()
+                        Text(entry.date, style: .timer)
+                            .padding([.leading])
+                            .font(.title)
+                            .foregroundColor(Color.yellow)
+                        }
+                        .padding(.all,8.0)
+                        .background(ContainerRelativeShape().fill(Color.blue))
+                        
+                        Spacer()
+                    }
+                    .padding(.all,8.0)
+                    .background(ContainerRelativeShape().fill(Color("LighterBlue")))
                 }
                 Spacer(minLength: 2)
             }
-           
+            
             
         }
     }
